@@ -1,0 +1,44 @@
+﻿<div class="simple-list">
+
+    <div class="simple-list-header">
+        <h1>Simple List</h1>
+
+        <input bind="@newItem" placeholder="Enter item to add to list" />
+        <button onclick="@AddItem">Add Item</button>
+    </div>
+
+    <div class="simple-list-list">
+
+        @if (!listItems.Any())
+        {
+            <p>You have no items in your list</p>
+        }
+        else
+        {
+            <ul>
+                @foreach (var item in listItems)
+                {
+                    <li>@item</li>
+                }
+            </ul>
+        }
+    </div>
+
+</div>
+
+
+@functions {
+
+    private List<string> listItems = new List<string>();
+    private string newItem;
+
+    private void AddItem()
+    {
+        if (string.IsNullOrEmpty(newItem))
+            return;
+
+        listItems.Add(newItem);
+        newItem = "";
+    }
+
+}

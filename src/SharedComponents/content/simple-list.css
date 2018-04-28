@@ -1,0 +1,60 @@
+﻿.simple-list {
+    border: 1px solid #bdbdbd;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.simple-list-header {
+    padding: 20px;
+    background: #ff9800;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ff9800',endColorstr='#e65100');
+    background: -webkit-linear-gradient(305deg,#ff9800 0%,#e65100 100%);
+    background: linear-gradient(145deg,#ff9800 0%,#e65100 100%);
+}
+
+    .simple-list-header h1 {
+        margin: 0 0 20px 0;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+    }
+
+.simple-list-header {
+    text-align: center;
+}
+
+    .simple-list-header input {
+        padding: 5px;
+        width: 300px;
+    }
+
+    .simple-list-header button {
+        padding: 5px;
+    }
+
+.simple-list-list {
+    padding: 20px;
+}
+
+.simple-list-list p {
+    text-align: center;
+    margin-bottom: 0;
+    font-style: italic;
+    color: #616161;
+}
+
+.simple-list-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .simple-list-list ul li:first-of-type {
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .simple-list-list ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
